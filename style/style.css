@@ -1,140 +1,146 @@
 @font-face {
-    font-family: Inter;
-    font-weight: 400;
-    font-style: normal;
-    src: url('./assets/fonts/static/Inter-Regular.ttf') format('truetype');
+  font-family: Inter;
+  font-weight: 400;
+  font-style: normal;
+  src: url('./assets/fonts/static/Inter-Regular.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: Inter;
-    font-weight: 600;
-    font-style: normal;
-    src: url('./assets/fonts/static/Inter-SemiBold.ttf') format('truetype');
+  font-family: Inter;
+  font-weight: 600;
+  font-style: normal;
+  src: url('./assets/fonts/static/Inter-SemiBold.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: Inter;
-    font-weight: 700;
-    font-style: normal;
-    src: url('./assets/fonts/static/Inter-Bold.ttf') format('truetype');
+  font-family: Inter;
+  font-weight: 700;
+  font-style: normal;
+  src: url('./assets/fonts/static/Inter-Bold.ttf') format('truetype');
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
 
-:root{
-    --color-background: #141414;
-    --color-surface: #1F1F1F;
-    --color-btn-primary: #333333;
-    --color-hover: #C4F82A;
-    --color-text-primary: #FFFFFF;
-    --color-text-secondary: #C4F82A;
+:root {
+  --color-background: #141414;
+  --color-surface: #1F1F1F;
+  --color-btn-primary: #333333;
+  --color-hover: #C4F82A;
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #C4F82A;
 
-    --font-size-24: 2.4rem;
-    --font-size-14: 1.4rem;
+  --font-size-24: 2.4rem;
+  --font-size-14: 1.4rem;
 
-    --line-height: 150%;
-    --letter-spacing: 0rem;
+  --line-height: 150%;
+  --letter-spacing: 0rem;
 
-    --spacing-40: 4.0rem;
-    --spacing-24: 2.4rem;
-    --spacing-16: 1.6rem;
-    --spacing-12: 1.2rem;
-    --spacing-8: 0.8rem;
-    --spacing-4: 0.4rem;
+  --spacing-40: 4.0rem;
+  --spacing-24: 2.4rem;
+  --spacing-16: 1.6rem;
+  --spacing-12: 1.2rem;
+  --spacing-8: 0.8rem;
+  --spacing-4: 0.4rem;
 }
 
-body{
+
+body {
+  background-color: var(--color-background);
+  font-family: 'Inter', sans-serif;
+}
+
+main{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-
-    background-color: var(--color-background);
-    font-family: 'Inter', sans-serif;
+    padding: 2.4rem;
 }
 
-.card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.card {
+  display: flex;
+  flex-direction: column;
 
-    width: 100%;
-    max-width: 38.4rem;
-    height: auto;
+  width: 100%;
+  max-width: 38.4rem;
+  height: auto;
 
-    background-color: var(--color-surface);
-    padding: var(--spacing-40);
-    border-radius: 1.4rem;
-    
+  background-color: var(--color-surface);
+  padding: var(--spacing-40);
+  border-radius: 1.4rem;
 }
 
-.card__image{
-    width: 8.8rem;
-    height: 8.8rem;
-    border-radius: 50%;
-    margin-bottom: var(--spacing-24);
+.card__image {
+  width: 8.8rem;
+  height: 8.8rem;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: var(--spacing-24);
 }
 
-.card__name{
-    color: var(--color-text-primary);
-    font-weight: 600;
-    font-size: var(--font-size-24);
-    line-height: var(--line-height);
-    letter-spacing: var(--letter-spacing);
+.card__name {
+  color: var(--color-text-primary);
+  font-weight: 600;
+  font-size: var(--font-size-24);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
 }
 
-.card__location{
-    color: var(--color-text-secondary);
-    font-weight: 700;
-    font-size: var(--font-size-14);
-    line-height: var(--line-height);
-    letter-spacing: var(--letter-spacing);
-    margin-bottom: var(--spacing-24);
+.card__location {
+  color: var(--color-text-secondary);
+  font-weight: 700;
+  font-size: var(--font-size-14);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+  margin-bottom: var(--spacing-24);
 }
 
-.card__bio{
-    color: var(--color-text-primary);
-    font-weight: 400;
-    font-size: var(--font-size-14);
-    line-height: var(--line-height);
-    letter-spacing: var(--letter-spacing);
-    margin-bottom: var(--spacing-24);
-}
-.card__nav{
-    width: 100%;
+.card__bio {
+  color: var(--color-text-primary);
+  font-weight: 400;
+  font-size: var(--font-size-14);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+  margin-bottom: var(--spacing-24);
 }
 
-.card__links-list{
-    list-style:none;
-    padding: 0;
-    width: 100%;
+.card__nav {
+  width: 100%;
 }
 
-.card__link{
-    display: block;
-    width: 100%;
-    background-color: var(--color-btn-primary);
-    color: var(--color-text-primary);
-    padding: var(--spacing-12);
-    margin-bottom: var(--spacing-16);
-    border-radius: 0.8rem;
-    font-size: var(--font-size-14);
-    text-align: center;
-    text-decoration: none;
-    font-weight: 700;
-    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out    ;
-}   
+.card__links-list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.card__link {
+  display: block;
+  width: 100%;
+  background-color: var(--color-btn-primary);
+  color: var(--color-text-primary);
+  padding: var(--spacing-12);
+  margin-bottom: var(--spacing-16);
+  border-radius: 0.8rem;
+  font-size: var(--font-size-14);
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
 
 .card__link:hover,
-.card__link:focus-visible{
-    background-color: var(--color-hover);
-    color: var(--color-surface);
+.card__link:focus-visible {
+  background-color: var(--color-hover);
+  color: var(--color-surface);
 }
