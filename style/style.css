@@ -1,3 +1,13 @@
+@font-face {
+    font-family: Inter;
+    src: url('./assets/fonts/Inter-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Inter;
+    src: url('./assets/fonts/Inter-Bold.ttf') format('truetype');
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -6,13 +16,6 @@
 
 html{
     font-size: 62.5%;
-}
-
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
 }
 
 :root{
@@ -29,11 +32,22 @@ body{
     --spacing-12: 1.2rem;
     --spacing-8: 0.8rem;
     --spacing-4: 0.4rem;
-
 }
 
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    background-color: var(--color-background);
+    font-family: 'Inter', sans-serif;
+}
+
+
+
 .card{
-    background: var(--color-surface);
+    background-color: var(--color-surface);
     padding: var(--spacing-40);
     border-radius: 1.4rem;
 }
