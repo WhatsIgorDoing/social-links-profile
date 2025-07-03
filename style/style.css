@@ -58,6 +58,10 @@ body{
 
 
 .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
     background-color: var(--color-surface);
     padding: var(--spacing-40);
     border-radius: 1.4rem;
