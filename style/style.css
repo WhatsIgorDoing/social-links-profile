@@ -4,3 +4,26 @@ body{
     align-items: center;
     min-height: 100vh;
 }
+
+:root{
+    --color-background: #141414;
+    --color-surface: #1F1F1F;
+    --color-btn-primary: #333333;
+    --color-hover: #C4F82A;
+    --color-text-primary: #FFFFFF;
+    --color-text-secondary: #C4F82A;
+
+    --spacing-40: 4.0rem;
+    --spacing-24: 2.4rem;
+    --spacing-16: 1.6rem;
+    --spacing-12: 1.2rem;
+    --spacing-8: 0.8rem;
+    --spacing-4: 0.4rem;
+
+}
+
+.card{
+    background: var(--color-surface);
+    padding: var(--spacing-40);
+    border-radius: 1.4rem;
+}
