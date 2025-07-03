@@ -66,9 +66,14 @@ body{
     flex-direction: column;
     align-items: center;
 
+    width: 100%;
+    max-width: 38.4rem;
+    height: auto;
+
     background-color: var(--color-surface);
     padding: var(--spacing-40);
     border-radius: 1.4rem;
+    
 }
 
 .card__image{
