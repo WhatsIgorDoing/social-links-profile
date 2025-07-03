@@ -37,6 +37,12 @@ html{
     --color-text-primary: #FFFFFF;
     --color-text-secondary: #C4F82A;
 
+    --font-size-24: 2.4rem;
+    --font-size-14: 1.4rem;
+
+    --line-height: 150%;
+    --letter-spacing: 0rem;
+
     --spacing-40: 4.0rem;
     --spacing-24: 2.4rem;
     --spacing-16: 1.6rem;
@@ -55,14 +61,45 @@ body{
     font-family: 'Inter', sans-serif;
 }
 
-
-
 .card{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
     background-color: var(--color-surface);
     padding: var(--spacing-40);
     border-radius: 1.4rem;
+}
+
+.card__image{
+    width: 8.8rem;
+    height: 8.8rem;
+    border-radius: 50%;
+    margin-bottom: var(--spacing-24);
+}
+
+.card__name{
+    color: var(--color-text-primary);
+    font-weight: 600;
+    font-size: var(--font-size-24);
+    line-height: var(--line-height);
+    letter-spacing: var(--letter-spacing);
+}
+
+.card__location{
+    color: var(--color-text-secondary);
+    font-weight: 700;
+    font-size: var(--font-size-14);
+    line-height: var(--line-height);
+    letter-spacing: var(--letter-spacing);
+    margin-bottom: var(--spacing-24);
+}
+
+.card__bio{
+    color: var(--color-text-primary);
+    font-weight: 400;
+    font-size: var(--font-size-14);
+    line-height: var(--line-height);
+    letter-spacing: var(--letter-spacing);
+    margin-bottom: var(--spacing-24);
 }
